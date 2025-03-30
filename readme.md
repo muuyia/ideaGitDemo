@@ -9,10 +9,11 @@ git commit -m "first commit"
 git branch -M main  
 git remote add origin git@github.com:muuyia/ideaGitDemo.git  
 GitHub远程仓库创建初始分支main，创建初始文件  
-git pull origin main
+git pull origin main  
 git push -u origin main  
 
 # issue
 ### fatal: refusing to merge unrelated histories
 拒绝合并不相关历史  
-解决：
+解决：git pull origin main --allow-unrelated-histories  
+资料：https://blog.csdn.net/junruitian/article/details/88361895#:~:text=%E5%A6%82%E6%9E%9Cgit  
